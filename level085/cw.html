@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>კოსმოსი</title>
+  <style>
+    /* საერთო სტილები */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+    button {
+      background-color: #1a237e;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background-color: #3949ab;
+    }
+  </style>
+</head>
+<body>
+  <h1>გესალმები კოსმოსში!</h1>
+  <p id="intro">კოსმოსი უსასრულო და საოცარი ადგილია, სიკაშკაშით სავსე ვარსკვლავებით და გალაქტიკებით.</p>
+  <img src="kosmos.jpg"
+       alt="შტერდების მარშრუტი"/>
+
+  <div class="buttons">
+    <button onclick="showAlert()">დაწკაპე და გითხრას “გამარჯობა!”</button>
+
+    <button onclick="changeBackground()">შეცვალე ფონტი</button>
+
+    <button onclick="changeTextColor()">შეცვალე ტექსტის ფერი</button>
+    <button onclick="increaseCount()">
+        კაუნთერი: <span id="counter">0</span>
+      </button>
+    </div>
+  
+    <script>
+      let count = 0;
+  
+      function showAlert() {
+        alert("გამარჯობა!");
+      }
+  
+      function changeBackground() {
+        document.body.style.backgroundColor =
+          document.body.style.backgroundColor === 'skyblue'
+            ? '#000'
+            : 'skyblue';
+        document.body.style.color =
+          document.body.style.backgroundColor === 'skyblue'
+            ? '#000'
+            : '#fff';
+      }
+  
+      function changeTextColor() {
+        const p = document.getElementById("intro");
+        p.style.color = p.style.color === 'lightgreen' ? '#fff' : 'lightgreen';
+      }
+  
+      function increaseCount() {
+        count += 1;
+        document.getElementById("counter").innerText = count;
+      }
+    </script>
+  </body>
+  </html>F

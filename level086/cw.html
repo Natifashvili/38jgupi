@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <button
+    onclick="handleBgChange()"
+    type="button">click</button>
+    <script>
+      const body = document.getElementById("body")
+      const btn1 = document.getElementsByTagName("button")[0]
+      console.log(btn1)
+
+      function handleBgChange(){
+        const colors = ["red", "blue", "green", "purple"]
+
+        const randomIndex = Math.floor( Math.random() *colors.length)
+        console.log(randomIndex)
+        
+        body.style.backgroundColor = [randomIndex]  
+      }
+    </script>
+  </body>
+</html>

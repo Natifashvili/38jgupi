@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4c531;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.buttons span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+.code-lines p {
+    margin: 5px 0;
+}
+
+.content {
+    padding: 15px;
+    width: 50%;
+    
+}
+
+.content img {
+border-radius: 15px;
+position:relative;
+left: -6px;
+z-index: 2;
+
+}
+
+
+.label {
+    background: #ffcc00;
+    padding-top: 8% 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 14px;
+    color: #333;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.avatar {
+    width: 0px;
+    height: 0PX;
+    border-radius: 15%;
+    background: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+
+.author p {
+    font-size: 14px;
+    font-weight: bold;
+}
