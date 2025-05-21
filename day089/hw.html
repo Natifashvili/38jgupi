@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>dadaadada</title>
+</head>
+<body>
+
+  <h1>countri</h1>
+  <span id="count">0</span><br>
+  <button onclick="increment()">damateba</button>
+  <button onclick="decrement()">gamokleba</button>
+  <button onclick="reset()">gadmotvirtva</button>
+
+  <hr>
+
+  <p id="text">es aris prg</p>
+  <button onclick="changeTextAndBackground()">shecvla</button>
+
+  <script>
+    let count = 0;
+    const countElement = document.getElementById("count");
+
+    function updateCountDisplay() {
+      countElement.textContent = count;
+      if (count > 0) {
+        countElement.style.color = "green";
+      } else if (count === 0) {
+        countElement.style.color = "black";
+      }
+    }
+
+    function increment() {
+      count++;
+      updateCountDisplay();
+    }
+
+    function decrement() {
+      if (count > 0) {
+        count--;
+        updateCountDisplay();
+      }
+    }
+
+    function reset() {
+      count = 0;
+      updateCountDisplay();
+    }
+
+    function changeTextAndBackground() {
+      document.getElementById("text").textContent = "ტექსტი შეიცვალა!";
+      document.body.style.backgroundColor = "#f0e68c";
+    }
+
+    updateCountDisplay(); 
+  </script>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-container">
+    <header class="header">Header</header>
+    <aside class="sidebar">Side Bar</aside>
+    <main class="content1">Content 1</main>
+    <section class="content2">Content 2</section>
+    <section class="content3">Content 3</section>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>

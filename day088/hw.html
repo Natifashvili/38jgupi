@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ჩემი საყვარელი ცხენი</title>
+  <style>
+    body {
+      background-color: #f0e4d7;
+      font-family: "Comic Sans MS", sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: brown;
+    }
+    img {
+      width: 300px;
+      border: 5px solid brown;
+      border-radius: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ffcc99;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>შეიცვალე ცხენი!</h1>
+  <img id="horseImage" src="image.jfif" alt="ცხენი">
+  <p id="horseFact">ცხენი ძალიან სწრაფი ცხოველია.</p>
+  <button onclick="changeHorse()">სხვა ცხენი!</button>
+
+  <script>
+    const horses = [
+      {
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/15/Horse_in_morning.jpg",
+        fact: "ცხენი ძალიან სწრაფი ცხოველია."
+      },
+      {
+        img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Horse_in_pasture.jpg",
+        fact: "ცხენებს უყვართ სირბილი მინდორში."
+      },
+      {
+        img: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Arabian_Horse_Saar.jpg",
+        fact: "არაბული ცხენები ძალიან ლამაზები არიან."
+      }
+    ];
+
+    let current = 0;
+
+    function changeHorse() {
+      current = (current + 1) % horses.length;
+      document.getElementById("horseImage").src = horses[current].img;
+      document.getElementById("horseFact").innerText = horses[current].fact;
+    }
+  </script>
+
+</body>
+</html>

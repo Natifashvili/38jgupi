@@ -23,7 +23,7 @@
 
         .grid-item {
             height: 200px;
-            background-color: rgb(255, 0, 0);
+            background-color: blue;
         }
     </style>
 </head>
@@ -42,3 +42,24 @@
     </div>
 </body>
 </html>
+<!-- 1) ავაგოთ ვებსაიტი სადაც onclic() ის გამოყენებით შევუცვლთ ბექგრაუნდს body tag -ს <3
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>saiti sadac ar unda daakliko gilaks rom sheicvalos peri</title>
+    </head>
+    <body>
+    
+      <h1>tu ginda peri rom sheicvalos AR DAAKLIKO GILAKEBS SHEN SICOCXLESHI...</h1>
+      <button onclick="changeBackground()">shevcvli pers tu ar damaklikeb !</button>
+    
+      <script>
+        function changeBackground() {
+          const colors = ["lightblue"]
+          const randomColor = colors[Math.floor(Math.random() * colors.length)];
+          document.body.style.backgroundColor = randomColor;
+        }
+      </script>
+    
+    </body>
+    </html> -->
